@@ -1,0 +1,32 @@
+
+.music-player{
+    padding: 0rem 5rem;
+}
+
+
+.music-player .card-wrpper{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+@media(width<=1024px){
+    .music-player{
+        padding: 0rem 3rem;
+    }
+    .music-card{
+        width: 50%;
+    }
+}
+
+
+@media(width<=541px){
+    .music-player{
+        padding: 0rem 2rem;
+    }
+    .music-card{
+        width: 80%;
+    }
+}
+

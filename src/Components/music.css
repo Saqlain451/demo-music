@@ -1,0 +1,116 @@
+.music-card{
+    width: 25%;
+    height: auto;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+}
+
+ .card-title {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .card-title .song-title {
+    font-size: 2.5rem;
+    padding: 3rem 0rem 0rem 0rem !important;
+  }
+  
+  .card-title .song-artist{
+    font-size: 1.6rem;
+    color: #a5aaaf !important;
+    padding-top: 1rem;
+  }
+  
+  .card-body .song-img {
+    padding: 1rem 2rem 2rem 2rem;
+    
+  }
+  
+  .song-img img {
+    border-radius: 50%;
+    display: block;
+    margin: auto !important;
+    box-shadow: 0px 0px 5px 5px #aaaaaa;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .seekbar .seekbar-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+  }
+  
+  .seekbar-bar {
+    padding: 0.5rem 3rem 0rem 3rem;
+  }
+  
+  .seekbar-bar input {
+    width: 100%;
+    height: 0.5rem;
+    -webkit-appearance: none; 
+     appearance: none; 
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--gradient-color);
+    height: 0.5rem;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    /* margin-top: -12px; Centers thumb on the track */
+    background-color: #5cd5eb;
+    height: 1.5rem;
+    width: 1.5rem;  
+    margin-top: -5px;
+    border-radius: 50%;  
+ }
+  
+
+  .card-body .control-buttons {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+  
+  .control-buttons p {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #6f7275 !important;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    border: none;
+    border-radius: 50% !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #ffffff !important;
+  }
+
+
+  .control-buttons p:nth-child(2){
+    width: 6rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
+  
+  .anime {
+    animation: songImgRound 3s linear infinite;
+  }
+  
+  
+  @keyframes songImgRound {
+    from {transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+  
